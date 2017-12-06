@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WAGMesonryViewController.h"
 
 @interface ViewController ()
 
@@ -16,9 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIImageView *imageV = [[UIImageView alloc]initWithFrame:self.view.bounds];
+    imageV.image = [UIImage imageNamed:@"test"];
+    imageV.contentMode = UIViewContentModeScaleAspectFill;
+    [self.view insertSubview:imageV atIndex:0]; // 这个方法只能说加深对图层的理解，，，
+    
+
+    
 }
 
+
+//- (void)setToMesonry:(UIButton *)toMesonry{
+
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -26,4 +38,8 @@
 }
 
 
+- (IBAction)mesonry:(id)sender {
+    WAGMesonryViewController *mesonryV = [[WAGMesonryViewController alloc]init];
+    [self presentViewController:mesonryV animated:YES completion:nil];
+}
 @end

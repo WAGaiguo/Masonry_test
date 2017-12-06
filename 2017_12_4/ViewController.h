@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *testLabel1;
+@property (weak, nonatomic) IBOutlet UILabel *testLabel2;
 
+- (IBAction)mesonry:(id)sender;
 
 @end
 

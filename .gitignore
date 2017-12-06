@@ -1,0 +1,5 @@
+*.DS_Store
+/Pods/Pods.xcodeproj/xcuserdata/
+/2017_12_4.xcworkspace/xcuserdata/
+2017_12_4.xcodeproj/xcuserdata/wangaiguo.xcuserdatad/xcdebugger/
+
